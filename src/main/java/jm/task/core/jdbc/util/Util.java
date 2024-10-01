@@ -9,7 +9,6 @@ import org.hibernate.cfg.Configuration;
 import org.hibernate.service.ServiceRegistry;
 
 public class Util {
-    // JDBC настройки
     private static final String URL = "jdbc:postgresql://localhost:5434/mydatabase";
     private static final String USER = "myuser";
     private static final String PASSWORD = "mysecretpassword";
@@ -27,12 +26,11 @@ public class Util {
         try {
             connection = DriverManager.getConnection(URL, USER, PASSWORD);
         } catch (SQLException e) {
-            e.printStackTrace(); // обычно так не делают, подключают логгер
+            e.printStackTrace();
         }
         return connection;
     }
 
-    // Hibernate настройки
     private static SessionFactory sessionFactory;
 
     static {

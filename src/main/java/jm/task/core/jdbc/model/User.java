@@ -32,7 +32,6 @@ public class User {
         this.age = age;
     }
 
-    // Getters and Setters
 
     public Long getId() {
         return id;
