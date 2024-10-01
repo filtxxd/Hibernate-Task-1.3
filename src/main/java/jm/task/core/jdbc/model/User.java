@@ -32,7 +32,7 @@ public class User {
         this.age = age;
     }
 
-
+//Геттеры и сеттеры
     public Long getId() {
         return id;
     }
