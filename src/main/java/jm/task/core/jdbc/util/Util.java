@@ -9,6 +9,8 @@ import org.hibernate.cfg.Configuration;
 import org.hibernate.service.ServiceRegistry;
 
 public class Util {
+
+    //параметры бд
     private static final String URL = "jdbc:postgresql://localhost:5434/mydatabase";
     private static final String USER = "myuser";
     private static final String PASSWORD = "mysecretpassword";
